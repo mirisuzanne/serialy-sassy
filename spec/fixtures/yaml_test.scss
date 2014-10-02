@@ -1,0 +1,7 @@
+$data : yaml('spec/fixtures/test.yml');
+$colors : map-get($data, 'colors');
+@each $color in $colors {
+  .#{$color} {
+    color: $color;
+  }
+}

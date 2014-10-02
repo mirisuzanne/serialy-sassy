@@ -1,0 +1,7 @@
+$json : json('spec/fixtures/test.json');
+$colors : map-get($json, 'colors');
+@each $color in $colors {
+  .#{$color} {
+    color: $color;
+  }
+}
