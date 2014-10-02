@@ -1,6 +1,11 @@
 # Serialy::Sassy
 
-TODO: Write a gem description
+Usage:
+
+```scss
+$json : json('foo.json');
+$yaml : yaml('foo.yml');
+```
 
 ## Installation
 
