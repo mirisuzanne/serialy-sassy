@@ -1,6 +1,9 @@
-# Serialy::Sassy
+# Serialy Sassy
+Serialy Sass is a set of sass functions two to be exact that will deserialize json or yaml into a sass map
 
 Usage:
+
+`require 'serialy/sassy'`
 
 ```scss
 $json : json('foo.json');
