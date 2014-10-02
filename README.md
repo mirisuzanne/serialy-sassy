@@ -26,10 +26,6 @@ Or install it yourself as:
 
     $ gem install serialy-sassy
 
-## Usage
-
-TODO: Write usage instructions here
-
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/serialy-sassy/fork )
