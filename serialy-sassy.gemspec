@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Serialy::Sassy::VERSION
   spec.authors       = ["Scott Davis"]
   spec.email         = ["me@sdavis.info"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Deserialize json or yaml file into a sass map}
+  spec.description   = %q{Deserializ a json or yaml file into a sass map}
   spec.homepage      = ""
   spec.license       = "MIT"
 
