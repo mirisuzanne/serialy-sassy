@@ -7,7 +7,7 @@ module Serialy
   module Sassy
 
     def self.declare(*args)
-      Sass::Script::Functions.declare(*args).inspect
+      Sass::Script::Functions.declare(*args)
     end
 
     def self.map(hash)
@@ -18,6 +18,7 @@ module Serialy
     def json(filename)
       filename = filename.value
       json_data = JSON.parse(File.read(filename))
+
       self.map(SassyHash[json_data])
     end
 
@@ -32,7 +33,7 @@ module Serialy
 
     declare(:yaml, [:filename])
   end
-  #include Sassy
+
   Sass::Script::Functions.send(:include, Serialy::Sassy)
 end
 
