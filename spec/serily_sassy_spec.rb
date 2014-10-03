@@ -12,7 +12,7 @@ describe 'Serily Sassy' do
 
     it "should load json data into a sass map" do
       css = compile(json_sass)
-      expect(".green {\n  color: green; }\n\n.red {\n  color: red; }\n\n.orange {\n  color: orange; }\n").to eq(css)
+      expect(".foo {\n  color: green; }\n\n.foo {\n  color: red; }\n\n.foo {\n  color: orange; }\n").to eq(css)
     end
   end
   describe :yaml do
@@ -26,7 +26,7 @@ describe 'Serily Sassy' do
 
     it "should load json data into a sass map" do
       css = compile(yaml_sass)
-      expect(".green {\n  color: green; }\n\n.red {\n  color: red; }\n\n.orange {\n  color: orange; }\n").to eq(css)
+      expect(".foo {\n  color: green; }\n\n.foo {\n  color: red; }\n\n.foo {\n  color: orange; }\n").to eq(css)
     end
   end
 end
