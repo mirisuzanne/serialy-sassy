@@ -1,0 +1,4 @@
+options:
+  color: true
+require:
+  - "serialy/sassy"

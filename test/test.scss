@@ -1,0 +1,30 @@
+@import "true";
+$json : json('./test/fixtures/test.json');
+$colors : map-get($json, 'colors');
+
+@include test-module('Json') {
+  @include test('Read Values') {
+    $expected : (green, red, orange);
+    @each $color in $expected {
+      $i : index($expected, $color);
+      @include assert-equal($color, nth($colors, $i));
+    }
+    @include assert-equal(100, map-get($json, 'number'));
+  }
+}
+
+$yml : yaml('./test/fixtures/test.json');
+$colors : map-get($yml, 'colors');
+
+@include test-module('Yaml') {
+  @include test('Read Values') {
+    $expected : (green, red, orange);
+    @each $color in $expected {
+      $i : index($expected, $color);
+      @include assert-equal($color, nth($colors, $i));
+    }
+    @include assert-equal(100, map-get($json, 'number'));
+  }
+}
+
+@include report;

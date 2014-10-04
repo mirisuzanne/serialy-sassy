@@ -2,7 +2,6 @@ require "serialy/sassy/version"
 require 'yaml'
 require 'json'
 require 'sassy_hash'
-
 module Serialy
   module Sassy
 
